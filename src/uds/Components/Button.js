@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Stack, Text } from "./primitive";
-
-
+import { Stack, Text } from "../primitive";
 
 const Button = props => {
   return (
@@ -34,9 +32,8 @@ const Button = props => {
           px="3"
           bg="white"
           borderRadius="2"
-          style={{border:"1px solid #CCCFDB"}}
+          style={{ border: "1px solid #CCCFDB" }}
           {...props}
-
         >
           <Text type400 medium color="accent.2">
             {props.children ? props.children : "Add Text"}
@@ -54,14 +51,12 @@ const Button = props => {
           bg="transparent"
           borderRadius="2"
           {...props}
-
         >
           <Text type400 medium color="accent.2">
             {props.children ? props.children : "Add Text"}
           </Text>
         </Stack>
       )}
-      
     </div>
   );
 };

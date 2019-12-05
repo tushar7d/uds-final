@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Stack } from "./primitive";
+import { Stack } from "../primitive";
 
 const Section = props => {
   return (
@@ -10,7 +10,7 @@ const Section = props => {
           horizontal
           width={props.size ? props.size : "100%"}
           height="auto"
-          m={props.m? props.m : ["2","4"]}
+          m={props.m ? props.m : ["2", "4"]}
           {...props}
         >
           {props.children}
@@ -20,7 +20,7 @@ const Section = props => {
           vertical
           width={"100%"}
           height="auto"
-          m={props.m? props.m : ["2","4"]}
+          m={props.m ? props.m : ["2", "4"]}
           {...props}
         >
           {props.children}

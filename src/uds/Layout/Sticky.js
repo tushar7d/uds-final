@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Box } from "./primitive";
+import { Box } from "../primitive";
 
 const Sticky = props => {
   let childref = React.createRef();
- 
- 
 
   return (
     <div>
@@ -17,13 +15,12 @@ const Sticky = props => {
         </Box>
       )}
       {props.bottom && (
-        <Box >
+        <Box>
           <Box position={"fixed"} bottom={0} left={0} right={0}>
             {props.children}
           </Box>
         </Box>
       )}
-
     </div>
   );
 };

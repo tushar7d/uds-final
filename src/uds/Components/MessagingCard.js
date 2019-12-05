@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Stack, Text } from "./primitive";
+import { Stack, Text } from "../primitive";
 
 const MessagingCard = props => {
   return (
