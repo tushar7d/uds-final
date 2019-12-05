@@ -10,6 +10,7 @@ export default function Main() {
       <Button secondary mr="2">
         Button
       </Button>
+      <i className="icon-account_circle" />
     </Stack>
   );
 }
