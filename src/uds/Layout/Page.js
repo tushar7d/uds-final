@@ -1,20 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Stack } from "../primitive";
+import { Box } from "../primitive";
 
 const Page = props => {
   return (
-    <Stack
-      vertical
-      center
-      top
-      width="calc(100vw - 32px)"
-      minHeight="100vh"
-      bg="neutral__200"
-      px="4"
-    >
+    <Box bg="background.1" height="100vh" width="100vw" {...props}>
       {props.children}
-    </Stack>
+    </Box>
   );
 };
 

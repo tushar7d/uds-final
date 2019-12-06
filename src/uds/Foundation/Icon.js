@@ -9,6 +9,7 @@ const Icon = props => {
       mid
       fontSize={props.size ? props.size : "24px"}
       color={props.color ? props.color : "neutral__900"}
+      {...props}
     >
       <i
         style={{ fontSize: "inherit", color: "inherit" }}

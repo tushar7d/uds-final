@@ -1,6 +1,6 @@
 import React from "react";
-import { ToolBar } from "./uds";
+import { Flex, Page } from "./uds";
 
 export default function Main() {
-  return <ToolBar />;
+  return <Page />;
 }
