@@ -1,6 +1,6 @@
 import React from "react";
-import { Flex, Page } from "./uds";
+import { ListingPage } from "./uds";
 
 export default function Main() {
-  return <Page />;
+  return <ListingPage>hello</ListingPage>;
 }
