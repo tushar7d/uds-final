@@ -4,7 +4,7 @@ import { Box } from "../primitive";
 
 const Page = props => {
   return (
-    <Box bg="background.1" height="100vh" width="100vw" {...props}>
+    <Box bg="background.1" height="100vh" width="100vw" mx="auto" {...props}>
       {props.children}
     </Box>
   );

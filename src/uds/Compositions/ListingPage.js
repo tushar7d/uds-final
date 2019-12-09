@@ -1,10 +1,11 @@
 import React from "react";
-import { Page, GlobalNav, Flex, Button } from "../index";
+import { Page, GlobalNav, Flex, Button, Box } from "../index";
 
 export default function ListingPage(props) {
   return (
     <Page>
       <GlobalNav />
+
       <Flex column stretch m="3">
         <Flex row left mb="3">
           <Button icon="tune" secondary fullwidth mr="1">
@@ -14,7 +15,11 @@ export default function ListingPage(props) {
             Map
           </Button>
         </Flex>
-        {props.children}
+        <Box maxWidth="1440px" mx="auto">
+          <Flex column stretch m="3">
+            {props.children}
+          </Flex>
+        </Box>
       </Flex>
     </Page>
   );
